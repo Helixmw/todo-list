@@ -1,0 +1,82 @@
+@font-face {
+  font-family: Coolvetica ;
+  src: url('./assets/fonts/coolvetica.otf');
+}
+
+:root{
+  --primary:rgb(60, 6, 131);
+  --secondary:rgb(60, 6, 131);
+  --white-bg:white;
+  --grey:rgb(102, 102, 102);
+  --background:rgb(238, 238, 238);
+  --logo: Coolvetica;
+  --radius:8px;
+  --shadow:4px 5px 20px rgb(194, 194, 194);
+}
+
+.details{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title{
+  /* border:1px solid; */
+  /* white-space: nowrap; */
+  /* overflow-x:hidden; */
+  /* width:40rem!important; */
+  /* text-overflow: ellipsis; */
+}
+
+.addButton:hover{
+  color:var(--primary);
+}
+
+.outline:hover{
+  border:1px solid var(--primary)!important;
+  background-color:var(--primary)!important;
+  color:white!important;
+}
+
+
+.input:focus{
+  border:1px solid var(--primary);
+}
+
+body {
+  background:var(--background);
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@media(max-width: 768px){
+  .title{
+    /* border:1px solid; */
+   
+    /* width:8rem; */
+     /* white-space: nowrap; */
+  overflow-x:hidden;
+  /* width:8rem!important; */
+  text-overflow: ellipsis;
+  text-align:left;
+  /* min-width:100%; */
+    
+  }
+
+
+  
+
+  .details{
+    flex-direction: column;
+    align-items: flex-start!important;
+  }
+}
